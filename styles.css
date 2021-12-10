@@ -1,0 +1,149 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: white;
+    width: 430px;
+    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -200px;
+    box-shadow: 0px 20px 20px hsl(224, 79%, 87%);
+}
+
+.card .hero {
+    border-radius: 15px 15px 0px 0px;
+    margin: auto;
+    width: 100%;
+}
+
+.card h1 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--Dark-blue);
+}
+
+.card p {
+    text-align: center;
+    margin-top: -15px;
+    color: var(--Desaturated-blue);
+}
+
+.card .price-card {
+    margin: auto;
+    width: 340px;
+    height: 66px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -170px;
+    border-radius: 15px;
+    background-color: var(--Very-pale-blue);
+}
+
+.card .price-card .icon {
+    position: absolute;
+    margin: 9px;
+}
+
+.card .price-card .info .plan {
+    font-weight: 900;
+    position: absolute;
+    margin: 11px 70px;
+    color: var(--Dark-blue);
+}
+
+.card .price-card .info .price {
+    color: var(--Desaturated-blue);
+    position: absolute;
+    margin: 35px 70px;
+}
+
+.card .price-card .change_btn {
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    position: absolute;
+    margin: 23px 250px;
+}
+
+.card .price-card .change_btn:hover {
+    color: hsl(245, 48%, 61%)
+}
+
+.card .payment_btn {
+    width: 340px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--Bright-blue);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -170px;
+    box-shadow: 0px 10px 20px hsl(224, 79%, 87%);
+}
+
+.card .payment_btn:hover {
+    color: hsl(245, 48%, 61%);
+}
+
+.card .cancel_btn {
+    width: 340px;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -170px;
+}
+
+.card .cancel_btn:hover {
+    color: var(--Dark-blue);
+}
+
+.attribution {
+    position: fixed;
+    width: 278px;
+    height: 15px;
+    top: 95%;
+    left: 50%;
+    margin-top: -7px;
+    margin-left: -125px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
